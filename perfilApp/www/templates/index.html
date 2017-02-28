@@ -1,0 +1,48 @@
+<ion-view>
+	<ion-nav-title>Perfil</ion-nav-title>
+	<ion-content>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Nome Completo</span>
+            <input type="text"placeholder="Nome Completo" />
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Senha</span>
+            <input type="password"  placeholder="Senha" />
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">E-mail</span>
+            <input type="text" placeholder="E-mail" />
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Nascimento</span>
+            <label class="item-input">
+                <select id="selDia">
+                    <option>Dia</option>
+                    <option ng-repeat="d in dias()">{{d}}</option>
+                </select>
+            </label>
+            <label class=" item-input">
+                <select>
+                    <option>Mês</option>
+                    <option ng-repeat="m in meses">{{m}}</option>
+                </select>
+            </label>
+            <label class="item-input">
+                <select>
+                    <option>Ano</option>
+                    <option ng-repeat="d in anos()">{{d}}</option>
+                </select>
+            </label>            
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Sexo</span>
+            <ion-radio>Masculino</ion-radio>
+            <ion-radio>Feminino</ion-radio>
+        </label>
+        <label class="item item-input item-stacked-label">
+            <ion-checkbox>Concordo com os <a>Termos</a></ion-checkbox>
+        </label>
+        <a class="button button-positive button-full">Salvar</a>
+        <a class="button button-full">Cancelar</a>
+    </ion-content>
+</ion-view>
